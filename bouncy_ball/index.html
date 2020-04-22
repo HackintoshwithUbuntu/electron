@@ -14,11 +14,18 @@
 <body style="background-color: aquamarine;">
   <!-- The intro title screen -->
   <h1 style="text-align: center; color: red;">Physics Simulator</h1>
-  <p style="text-align: center;">Simulates some aspects of physics. Click below to either choose a random number of balls or generate a number you choose.</p>
+  <p style="position: absolute; top: 10%; left: 15%;">Simulates some aspects of physics. Click below to either choose a
+    random number of balls or generate a number you choose.</p>
+
+  <!-- Buttons on intro screen -->
+  <div class="button">
+    <button>Choose a number</button>
+    <button>Random</button>
+  </div>
 
   <!-- Hidden canvas for game -->
-  <canvas style = "visibility: hidden;"></canvas>
-  <p id = "title" style = "visibility: hidden">Click to Restart Simulation</p>
+  <canvas style="visibility: hidden;"></canvas>
+  <p id="title" style="visibility: hidden">Click to Restart Simulation</p>
 
   <!-- Just the scripting -->
   <script src="./script.js"></script>
