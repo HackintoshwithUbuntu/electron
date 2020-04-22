@@ -26,3 +26,11 @@ p {
   font-weight: bold;
   border-radius: 5px; 
 }
+
+/* The text that appears when the buttons are clicked */
+.selected{
+  position: relative;
+  text-align: center;
+  top: 150px; 
+  visibility: hidden;
+}
