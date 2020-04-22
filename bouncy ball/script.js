@@ -56,6 +56,7 @@ function Ball(x, y, dx, yspeed, radius, color) {
 	this.radius = radius;
 	this.color = color;
 	//Physics aspects based on radius
+	//Larger objects fall faster and have less bounce, small ones opposite
 	var gravity = radius / 15;
 	var friction = -(0.01*radius) + 1.034;
 
