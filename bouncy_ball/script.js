@@ -1,3 +1,8 @@
+
+//game start after clicking 'ENTER'
+function game() {
+	
+
 // Initial Setup
 var canvas = document.querySelector('canvas');
 var c = canvas.getContext('2d');
@@ -118,3 +123,8 @@ function animate() {
 
 init();
 animate();
+
+}
+
+//call the game function
+game();
