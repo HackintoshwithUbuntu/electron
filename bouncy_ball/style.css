@@ -14,11 +14,15 @@ p {
 /* Styling the buttons */
 .buttonArea {
   position: absolute;
-  left: 41.5%;
+  left: 39%;
   top: 25%
 }
 
 .buttonArea > * {
   cursor: pointer;
-  border: none;
+  padding:10px 30px;
+  background-color:rgb(17, 0, 255);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px; 
 }
