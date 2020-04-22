@@ -12,6 +12,7 @@
 </head>
 
 <body style="background-color: aquamarine;">
+
   <!-- The intro title screen -->
   <h1 style="text-align: center; color: red;">Physics Simulator</h1>
   <p style="position: absolute; top: 10%; left: 15%; font-weight: bold  ;">Simulates some aspects of physics. Click below to either choose a
@@ -23,7 +24,12 @@
     <button id="random" class="unselected">Random</button>
   </div>
 
-  <!-- Hidden canvas for game -->
+  <!-- Dynamic Game Instructions -->
+  /* need to be hidden until use clicks either of the starting buttons */
+  <p id="choose_selected" class="selected">You have selected choose a number, type a number and click start!</p>
+  <p id="random_selected" class="selected">You have selected random, click start!</p>
+
+  <!-- Hidden Canvas for game -->
   <canvas style="visibility: hidden;"></canvas>
   <p id="title" style="visibility: hidden">Click to Restart Simulation</p>
 
