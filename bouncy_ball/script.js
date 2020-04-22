@@ -4,6 +4,7 @@ function game() {
 	
 
 // Initial Setup
+var title = document
 var canvas = document.querySelector('canvas');
 var c = canvas.getContext('2d');
 
