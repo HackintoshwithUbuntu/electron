@@ -5,11 +5,13 @@ function game() {
 
 // Initial Setup
 var title = document.getElementById("title");
+var background = document.querySelector("body");
 var canvas = document.querySelector('canvas');
 var c = canvas.getContext('2d');
 	// Make sure they are visible
 	title.style.visibility = "visible";
 	canvas.style.visibility = "visible";
+	background.style.backgroundColor = "transparent";
 
 canvas.width = innerWidth;
 canvas.height = innerHeight;
