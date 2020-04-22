@@ -1,5 +1,5 @@
 
-//game start after clicking 'ENTER'
+// Game start after clicking 'ENTER'
 function game() {
 	
 
@@ -7,7 +7,7 @@ function game() {
 var title = document.getElementById("title");
 var canvas = document.querySelector('canvas');
 var c = canvas.getContext('2d');
-	//make sure they are visible
+	// Make sure they are visible
 	title.style.visibility = "visible";
 	canvas.style.visibility = "visible";
 
@@ -64,8 +64,8 @@ function Ball(x, y, dx, yspeed, radius, color) {
 	this.yspeed = yspeed;
 	this.radius = radius;
 	this.color = color;
-	//Physics aspects based on radius
-	//Larger objects fall faster and have less bounce, small ones opposite
+	// Physics aspects based on radius
+	// Larger objects fall faster and have less bounce, small ones opposite
 	var gravity = radius / 15;
 	var friction = -(0.01*radius) + 1.034;
 
@@ -130,5 +130,5 @@ animate();
 
 }
 
-//call the game function
+// Call the game function
 game();
