@@ -1,0 +1,11 @@
+{
+  "name": "bouncy_ball",
+  "version": "1.0.0",
+  "description": "physics simulator made using electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Syed Ahmad",
+  "license": "MIT"
+}
