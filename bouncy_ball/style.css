@@ -11,11 +11,14 @@ p {
   font-family: 'Open Sans', sans-serif;
 }
 
-.button {
-  border: none;
-  cursor: pointer;
-  text-align: center;
+/* Styling the buttons */
+.buttonArea {
   position: absolute;
   left: 41.5%;
   top: 25%
+}
+
+.buttonArea > * {
+  cursor: pointer;
+  border: none;
 }
