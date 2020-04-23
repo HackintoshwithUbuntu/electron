@@ -13,9 +13,9 @@ p {
 
 /* Styling the buttons */
 .buttonArea {
-  position: absolute;
-  left: 39%;
-  top: 25%
+  position: relative;
+  top: 30%;
+  left: 40%;
 }
 
 .buttonArea > * {
@@ -31,6 +31,7 @@ p {
 .selected{
   position: relative;
   text-align: center;
-  top: 150px; 
-  visibility: hidden;
+  top: 50px; 
+    /*TODO when done, change back to hidden*/
+  visibility: visible;
 }
