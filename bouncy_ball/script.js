@@ -135,4 +135,4 @@ animate();
 // TODO button start will go here
 
 // Call the game function
-game();
+//game();
