@@ -13,9 +13,8 @@ p {
 
 /* Styling the buttons */
 .buttonArea {
-  position: relative;
-  top: 30%;
-  left: 40%;
+  position: static;
+  width: 100%;
 }
 
 .buttonArea > * {
@@ -25,6 +24,7 @@ p {
   color: white;
   font-weight: bold;
   border-radius: 5px; 
+  position: center;
 }
 
 /* The text that appears when the buttons are clicked */
