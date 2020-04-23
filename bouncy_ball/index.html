@@ -1,19 +1,41 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Colored Gravity</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="./style.css">
 
 </head>
-<body>
-<!-- partial:index.partial.html -->
-<canvas></canvas>
-<p>Click to Restart Simulation</p>
 
-<!-- partial -->
-  <script  src="./script.js"></script>
+<body style="background-color: aquamarine;">
+
+  <!-- The intro title screen -->
+  <h1 style="text-align: center; color: red;">Physics Simulator</h1>
+  <p style="position: absolute; top: 10%; left: 15%; font-weight: bold  ;">Simulates some aspects of physics. Click below to either choose a
+    random number of balls or generate a number you choose.</p>
+
+  <!-- Buttons on intro screen -->
+  <div class="buttonArea">
+    <button id="choose">Choose a number</button>
+    <button id="random">Random</button>
+  </div>
+
+  <!-- Dynamic Game Instructions -->
+        <!-- need to be hidden until use clicks either of the starting buttons --> 
+  <p id="choose_selected" class="selected">You have selected choose a number, type a number and click start!</p>
+  <p id="random_selected" class="selected">You have selected random, click start!</p>
+
+  <!-- Hidden Canvas for game -->
+  <canvas style="visibility: hidden;"></canvas>
+  <p id="title" style="visibility: hidden">Click to Restart Simulation</p>
+
+  <!-- Just the scripting -->
+  <script src="./script.js"></script>
 
 </body>
+
 </html>

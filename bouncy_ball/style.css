@@ -11,3 +11,26 @@ p {
   font-family: 'Open Sans', sans-serif;
 }
 
+/* Styling the buttons */
+.buttonArea {
+  position: absolute;
+  left: 39%;
+  top: 25%
+}
+
+.buttonArea > * {
+  cursor: pointer;
+  padding:10px 30px;
+  background-color:rgb(17, 0, 255);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px; 
+}
+
+/* The text that appears when the buttons are clicked */
+.selected{
+  position: relative;
+  text-align: center;
+  top: 150px; 
+  visibility: hidden;
+}
