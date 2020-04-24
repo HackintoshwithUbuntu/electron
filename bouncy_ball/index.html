@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,25 +13,38 @@
 
 <body style="background-color: aquamarine;">
 
-  <!-- The intro title screen -->
-  <h1 style="text-align: center; color: red;">Physics Simulator</h1>
-  <p style="position: absolute; top: 10%; left: 15%; font-weight: bold  ;">Simulates some aspects of physics. Click below to either choose a
-    random number of balls or generate a number you choose.</p>
-
-  <!-- Buttons on intro screen -->
-  <div class="buttonArea">
-    <button id="choose">Choose a number</button>
-    <button id="random">Random</button>
-  </div>
-
-  <!-- Dynamic Game Instructions -->
-        <!-- need to be hidden until use clicks either of the starting buttons --> 
-  <p id="choose_selected" class="selected">You have selected choose a number, type a number and click start!</p>
-  <p id="random_selected" class="selected">You have selected random, click start!</p>
-
   <!-- Hidden Canvas for game -->
-  <canvas style="visibility: hidden;"></canvas>
+  <canvas style="visibility: hidden; z-index: 100;"></canvas>
   <p id="title" style="visibility: hidden">Click to Restart Simulation</p>
+
+  <div id="intro_screen">
+    <!-- The intro title screen -->
+    <h1 style="text-align: center; color: red;">Physics Simulator</h1>
+    <p style="position: relative; text-align:center; font-weight: bold;">
+      Simulates some aspects of physics. Click below to either choose a
+      random number of balls or generate a number you choose.
+    </p>
+
+    <!-- Buttons on intro screen -->
+    <div style="text-align: center;">
+      <div class="buttonArea" display: inline-block>
+        <button id="choose">Choose a number</button>
+        <button id="random">Random</button>
+      </div>
+    </div>
+
+    <!-- Dynamic Game Instructions -->
+    <!-- need to be hidden until use clicks either of the starting buttons -->
+    <p id="choose_selected" class="introtext">You have selected choose a number, type a number and click start!</p>
+    <p id="random_selected" class="introtext">You have selected random, click start!</p>
+
+    <div style="visibility: hidden; text-align: center; height:fit-content; position: relative; top: -25px;">
+      <input id="ball_input" type="number" value="100" display: inline-block>
+    </div>
+    <div style="text-align: center; height:fit-content; position: relative; top: -15px;">
+      <button id="start_but">Start!</button>
+    </div>
+  </div>
 
   <!-- Just the scripting -->
   <script src="./script.js"></script>
