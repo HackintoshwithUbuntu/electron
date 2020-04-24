@@ -31,7 +31,7 @@ p {
 .introtext{
   position: relative;
   text-align: center;
-  top: 50px; 
+  top: 10px; 
     /*TODO when done, change back to hidden*/
   visibility: visible;
 }
