@@ -1,6 +1,22 @@
+// Intro screen
+function intro() {
+	// Button selectors
+		var choose_but = document.getElementById("choose")
+		var random_but = document.getElementById("random")
+		var start_but = document.getElementById("start_but")
+	// Input and text selectors
+		var choose_text = document.getElementById("choose_selected")
+		var random_text = document.getElementById("random_selected")
+		var input_box = document.getElementById("ball_input")
+	// On click
+		choose_but.addEventListener("click", function () {
+		
+	})
+}
+
 
 // Game start after clicking 'ENTER'
-function game() {
+function game(numberofballs) {
 	
 
 // Initial Setup
@@ -106,7 +122,7 @@ var ballArray = [];
 function init() {
 	ballArray = [];
 
-	for (let i = 0; i < 100; i++) {
+	for (let i = 0; i < numberofballs; i++) {
 		var radius = randomIntFromRange(5, 30);
 		var x = randomIntFromRange(radius, canvas.width - radius);
 		var y = randomIntFromRange(0, canvas.height - radius);
@@ -131,8 +147,6 @@ init();
 animate();
 
 }
-
-// TODO button start will go here
 
 // Call the game function
 //game();

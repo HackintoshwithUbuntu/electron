@@ -32,8 +32,7 @@ p {
   position: relative;
   text-align: center;
   top: 10px; 
-    /*TODO when done, change back to hidden*/
-  visibility: visible;
+  visibility: hidden;
 }
 
 /* Start Button*/
@@ -45,6 +44,5 @@ p {
     padding: 10px 60px;
     font-weight: bold;
     cursor: pointer;
-        /*TODO when done, change back to hidden*/
-    visibility: visible;
+    visibility: hidden;
 }
